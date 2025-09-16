@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+
+    --fs-text: clamp(0.9rem, 1.5vw, 1rem);
+    --fs-small: clamp(0.8rem, 1.2vw, 0.95rem);
+}
+
+.footer {
+    background-color: var(--cor-2);
+    border-top: 1px solid rgb(201, 199, 199);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 10rem;
+    padding: 3% 5%;
+
+    font-family: "Roboto", sans-serif;
+    font-size: var(--fs-text);
+    margin-top: 5rem;
+}
+
+.footer img {
+    width: clamp(3.5rem, 8vw, 6rem);
+    height: auto;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+}
+
+/* Colunas do footer */
+.footer .logo,
+.footer .suporte,
+.footer .termos,
+.footer .contatos {
+    flex: 1 1 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .logo {
+    font-size: var(--fs-small);
+}
+
+.footer .suporte,
+.footer .termos,
+.footer .contatos {
+    font-size: var(--fs-text);
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+
+    --fs-h1: clamp(2rem, 4vw, 3rem);
+    --fs-h2: clamp(1.5rem, 3vw, 2.2rem);
+    --fs-h3: clamp(1.2rem, 2.5vw, 1.8rem);
+    --fs-text: clamp(1rem, 2vw, 1.1rem);
+}
+
+body {
+    background-color: var(--cor-2);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*:hover {
+    outline: none;
+    cursor: pointer;
+}
+
+.divMaior {
+    display: block;
+    margin-top: 2rem;
+    padding: 0 5%;
+}
+
+/* Layout principal */
+.divMaior2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divText {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divText h1 {
+    font-size: var(--fs-h1);
+    color: var(--cor-1);
+    width: 80%;
+}
+
+.divText h3 {
+    font-size: var(--fs-h3);
+    color: var(--cor-4);
+    max-width: 20ch;
+}
+
+.divText .text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: auto;
+}
+
+.divText img {
+    border-radius: 0.3rem;
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+}
+
+.divText button {
+    background-color: var(--cor-4);
+    color: var(--cor-2);
+    border: none;
+    font-size: var(--fs-text);
+    font-weight: bold;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    align-self: flex-start;
+    transition: 0.5s;
+}
+
+.divText button:hover {
+    background-color: var(--cor-2);
+    color: var(--cor-4);
+}
+
+/* Logo */
+.divLogo {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divLogo img {
+    width: 85%;
+    max-width: 25rem;
+    height: auto;
+    border-radius: 50% 0 50% 50%;
+    padding: 5%;
+    background-color: var(--cor-4);
+}
+
+/* Promoções */
+.divPromocoes {
+    margin-top: 5rem;
+    padding: 0 5%;
+}
+
+.divPromocoes h1 {
+    font-size: var(--fs-h2);
+    color: var(--cor-1);
+    margin-bottom: 2rem;
+}
+
+/* Camisetas */
+.divCamisetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.camisetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+p,
+h2 {
+    color: var(--cor-4);
+}
+
+.camisetas .camisetaP {
+    flex: 1 1 15rem;
+    box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    transition: background-color 1s;
+}
+
+.camisetaP:hover {
+    background-color: var(--cor-5);
+}
+
+.camisetas .camisetaP img {
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+    opacity: 75%;
+}
+
+/* Camiseta destaque */
+.camisetas .camisetaG {
+    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.camisetaG img {
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+}
+
+.camisetaG button {
+    background-color: var(--cor-4);
+    color: var(--cor-2);
+    border: none;
+    font-size: var(--fs-text);
+    font-weight: bold;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    transition: 0.5s;
+}
+
+.camisetaG button:hover {
+    background-color: var(--cor-2);
+    color: var(--cor-4);
+}
+
+.camisetaG h2 {
+    font-size: var(--fs-h2);
+    text-align: center;
+}

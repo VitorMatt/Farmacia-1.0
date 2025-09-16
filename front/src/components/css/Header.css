@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --cor-1: #e23e57;
+    --cor-2: #ffffff;
+    --cor-3: #e96a7e;
+    --cor-4: #ce1f3a;
+    --cor-5: #e6e6e6;
+    --cor-6: #ef97a4;
+
+    --fs-link: clamp(1rem, 2vw, 1.25rem);
+    --fs-btn: clamp(0.9rem, 1.8vw, 1rem);
+}
+
+*:focus {
+    outline: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: var(--cor-2);
+    font-family: "Roboto", sans-serif;
+
+    padding: 1rem 5%;
+}
+
+/* Logo */
+nav img {
+    height: auto;
+    width: clamp(8rem, 15vw, 14rem);
+    transition: 0.5s;
+}
+
+nav img:hover {
+    opacity: 0.6;
+}
+
+/* Links */
+.links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.links a {
+    color: var(--cor-3);
+    font-size: var(--fs-link);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: var(--cor-4);
+    transform: scale(1.05);
+}
+
+/* Botão */
+.links button {
+    background-color: var(--cor-4);
+    color: var(--cor-2);
+    border: none;
+    font-size: var(--fs-btn);
+    font-weight: bold;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    transition: 0.5s;
+}
+
+.links button:hover {
+    background-color: var(--cor-2);
+    color: var(--cor-4);
+    border: 1px solid var(--cor-4);
+}
